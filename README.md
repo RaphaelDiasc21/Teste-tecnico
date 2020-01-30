@@ -14,6 +14,8 @@ API - Desenvolvida utilizando Laravel com banco de dados sqlite
     - Adicionar planos ao cliente
     
   - Arquitetura
+    - Além das duas tabelas obrigatórias, criei mais uma que serve de elo (pivot) para o relacionamento N:N entre os clientes e planos
+    (1 cliente pode ter 1 ou mais planos, sendo que por consequencia, planos podem ter N clientes)
     - A api foi desenvolvida orientado ao padrão de projeto MVC, com apenas umas modificações levando em conta a inexistência das 'Views'
     sendo uma API.
           - Controllers: Localizados na pasta "Controllers" dentro de App;
